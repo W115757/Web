@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            #name{
+                background-color:darkorchid;
+                font-size:50px;
+            }
+            #profile{
+                background-color:coral;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p id="name">江西软件职业技术大学</p>
+        <p id="profile">个人简介</p>
+        <button id = "btn1" type="submit">提交</button>
+        <button>清空</button>
+        <form action="www.baidu.com">
+
+        </form>
+        <script>
+            var target = document.getElementById("btn1");
+            target.onclick = function (){
+                alert("我被点击了");
+            }
+            document.onmouseenter = function (){
+                //alert("鼠标进来了");
+            }
+            document.body.onmousemove = function (){
+                console.log("鼠标在移动");
+            }
+        </script>
+    </body>
+</html>
