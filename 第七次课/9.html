@@ -22,29 +22,57 @@
             left: 100px;
             top: 400px;
         }
+
+        .button{
+            display:inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration:lavenderblush;
+            outline:lightblue;
+            color: cornflowerblue;
+            background-color: darkblue;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color:gainsboro
+        }
+
+        .button:active{
+            background-color:gold;
+            box-shadow: 0 10px #902;
+            transform: translateY(4px);
+        }
     </style>
 </head>
 
 <body>
-    <div id="box1" class="box">
-    </div>
-    <div id="box2" class="box">
-    </div>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
 
     <br>
     <br>
     <br>
-    <input type="button" id="btn1" value="请点击我">
+    
+    <button class="button" id="btn1">PLEASE CLICK ON</button>
 <script>
     var target = document.getElementById("btn1");
     target.onclick = function (){
+        var leftValue = document.getElementById("box2").style.left;
+        leftValue = leftValue.replace("px","");
+        leftValue = Number(leftValue) + 20;
+        document.getElementById("box2").style.left = leftValue + "px";
+
         var leftValue = document.getElementById("box1").style.left;
         leftValue = leftValue.replace("px","");
         leftValue = Number(leftValue) + 5;
         document.getElementById("box1").style.left = leftValue + "px";
     }
 </script>
-
 </body>
 
 </html>
