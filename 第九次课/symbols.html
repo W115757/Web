@@ -1,0 +1,42 @@
+<!-- 行内元素和块级元素可以转换。但是行内元素无法更改宽和高，块级元素可以。 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            /* display: inline-block; */
+        }
+        #box1 {
+            background-color: burlywood;
+        }
+        #box2 {
+            background-color: coral;
+        }
+        #box3 {
+            background-color:crimson;
+        }
+        i{
+            background-color: darkred;
+            width: 20px;
+            height: 20px;
+            display: block;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="i">2344</div>
+    <div class="box" id="box1">1111</div>    
+    <div class="box" id="box2">2222</div>
+    <div class="box" id="box3">3333</div>
+
+</body>
+</html>
