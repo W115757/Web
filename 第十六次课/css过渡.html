@@ -1,0 +1,45 @@
+<!-- 浏览器是单线程的 进程 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css过渡</title>
+
+    <style>
+        #wrapper{
+            width: 50px;
+            height: 50px;
+            background-color:yellow;
+            border: 10px solid cornflowerblue ;
+        }
+        #wrapper:hover{
+            width: 500px;
+            /* height: 200px; */
+            transition: width ease 5s 1s;   /* 过渡属性：方向，属性名称，动画过渡时间，延迟开始时长 */
+        }
+    </style>
+
+</head>
+
+<body onload="init()">
+    <div id="wrapper">0</div>  <!-- div#wrapper 快捷 -->
+    
+    <script>// js一切及对象
+        function init(){
+            var target = window.document.getElementById("wrapper");
+        target.style.backgroundColor="lavender";
+        }
+        var apple=20;
+        var lemon="柠檬";
+        var banana=true;
+        var pear=null;
+        var orange=undefined;
+        var peach=function peachSum(){};
+        var watermelon={};
+        concole.log(typeof watermelon);
+        // js里的变量：var（1.0），let（2.0）,const（通用）
+    </script>
+
+</body>
+</html>

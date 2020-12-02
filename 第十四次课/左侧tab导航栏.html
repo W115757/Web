@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左侧tab导航栏</title>
+    <style>
+        body{
+            background-color: cadetblue;
+
+        }
+        .wrapper{
+            background-color: cornflowerblue;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            left: 50%;    /*--相对于body--*/
+            top: 50%;
+            margin-left: -300px;
+            margin-top: -200px;
+        }
+        #leftTab{
+            background-color: cornsilk;
+            width: 30%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+        }
+        #rightTab{
+            background-color: darksalmon;
+            width: 70%;
+            height: 90%;
+            float: right;
+            position: relative;
+            top: 5%;
+        }
+        .menu{
+            background-color: darkgray;
+            height: 30px;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+        /* #leftTab div:first-child{
+            margin-top: 50px;
+            background-color:burlywood;
+        } */
+        .menu a{
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        .menu a:active{
+            background-color: purple;
+        }
+        #home{
+            background-color:thistle;
+            display: none;
+            height: 320px;
+        }
+        #news{
+            background-color: thistle;
+            display: none;
+            height: 320px;
+        }
+        #department{
+            background-color: thistle;
+            display: none;
+            height: 320px;
+        }
+        #teachers{
+            background-color: thistle;
+            display: none;
+            height: 320px;
+        }
+        #teaching{
+            background-color: thistle;
+            display: none;
+            height: 320px;
+        }
+        #rightTab div:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="leftTab">
+            <!-- #menu$*5  #代表div的id标签 $代表自动填充 *5代表共五条语句 -->
+            <!-- <a></a> a标签链接-->
+            <div id="menu1" class="menu"><a href="#home" class="menuName">学校概况</a></div>      
+            <div id="menu2" class="menu"><a href="#news" class="menuName">新闻中心</a></div>
+            <div id="menu3" class="menu"><a href="#department" class="menuName">机构设置</a></div>
+            <div id="menu4" class="menu"><a href="#teachers" class="menuName">师资队伍</a></div>
+            <div id="menu5" class="menu"><a href="#teaching" class="menuName">教育教学</a></div>
+        </div>
+        <div id="rightTab">
+            <div id="home">
+                <p>
+                    江西软件职业技术大学是全国第一所软件职业技术大学，由国家软件百强企业先锋软件股份有限公司于2003年创办，成立之初就成功入选全国35所示范性软件职业技术学院。2018年12月18日，教育部批准学校升格为本科层次职业学校，成为全国首批15所本科层次职业教育高校之一。2019年5月27日，教育部批复更名为江西软件职业技术大学。
+                </p>
+            </div>
+            <div id="news">
+                <p>
+                    2020年10月24日，江西软件职业技术大学区块链活动节隆重启幕。此次区块链活动节是学习习近平总书记“10·24”讲话精神的重要活动，是先锋软件集团和江西软件大学自2015年来，在区块链领域探索出的具有纪念意义的活动，它生动地诠释了江西软件大学“学习的先锋、运动的先锋、快乐的先锋、创新的先锋”的校园文化精神。
+                </p>
+            </div>
+            <div id="department">
+                <p>
+                    刷卡黑哦符号位我欧克拉萨金风科技覅噢诶荣
+                </p>
+            </div>
+            <div id="teachers">
+                <p>
+                    暗恋我哦豁申请赴日我心阿凤姐儿欧文我金融萨拉大盘 
+                </p>
+            </div>
+            <div id="teaching">
+                <p>
+                    爱上佛弃权票侮辱他也是健美操不咳嗽我们这里了登记反馈
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
